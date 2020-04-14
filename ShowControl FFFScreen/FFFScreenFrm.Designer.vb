@@ -87,7 +87,7 @@ Partial Class FFFScreenFrm
         '
         Me.Question_Label.BackColor = System.Drawing.Color.Transparent
         Me.Question_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Question_Label.Font = New System.Drawing.Font("Arial", 25.0!)
+        Me.Question_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.Question_Label.ForeColor = System.Drawing.Color.White
         Me.Question_Label.ImageKey = "(none)"
         Me.Question_Label.Location = New System.Drawing.Point(28, 14)
@@ -113,9 +113,9 @@ Partial Class FFFScreenFrm
         Me.Answer1_PlaceGfx.Controls.Add(Me.AnswerA_Label)
         Me.Answer1_PlaceGfx.Controls.Add(Me.MarkA_Label)
         Me.Answer1_PlaceGfx.Enabled = False
-        Me.Answer1_PlaceGfx.Location = New System.Drawing.Point(358, 177)
+        Me.Answer1_PlaceGfx.Location = New System.Drawing.Point(358, 175)
         Me.Answer1_PlaceGfx.Name = "Answer1_PlaceGfx"
-        Me.Answer1_PlaceGfx.Size = New System.Drawing.Size(644, 69)
+        Me.Answer1_PlaceGfx.Size = New System.Drawing.Size(644, 72)
         Me.Answer1_PlaceGfx.TabIndex = 1307
         '
         'AnswerA_Label
@@ -123,12 +123,12 @@ Partial Class FFFScreenFrm
         Me.AnswerA_Label.BackColor = System.Drawing.Color.Transparent
         Me.AnswerA_Label.Enabled = False
         Me.AnswerA_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AnswerA_Label.Font = New System.Drawing.Font("Arial", 25.0!)
+        Me.AnswerA_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.AnswerA_Label.ForeColor = System.Drawing.Color.White
         Me.AnswerA_Label.ImageKey = "(none)"
-        Me.AnswerA_Label.Location = New System.Drawing.Point(65, 12)
+        Me.AnswerA_Label.Location = New System.Drawing.Point(65, 14)
         Me.AnswerA_Label.Name = "AnswerA_Label"
-        Me.AnswerA_Label.Size = New System.Drawing.Size(575, 43)
+        Me.AnswerA_Label.Size = New System.Drawing.Size(553, 43)
         Me.AnswerA_Label.TabIndex = 1222
         Me.AnswerA_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -141,7 +141,7 @@ Partial Class FFFScreenFrm
         Me.MarkA_Label.Font = New System.Drawing.Font("Arial", 24.0!)
         Me.MarkA_Label.ForeColor = System.Drawing.Color.Orange
         Me.MarkA_Label.ImageKey = "(none)"
-        Me.MarkA_Label.Location = New System.Drawing.Point(27, 16)
+        Me.MarkA_Label.Location = New System.Drawing.Point(27, 18)
         Me.MarkA_Label.Name = "MarkA_Label"
         Me.MarkA_Label.Size = New System.Drawing.Size(45, 36)
         Me.MarkA_Label.TabIndex = 1220
@@ -192,9 +192,9 @@ Partial Class FFFScreenFrm
         Me.Answer4_PlaceGfx.Controls.Add(Me.AnswerD_Label)
         Me.Answer4_PlaceGfx.Controls.Add(Me.MarkD_Label)
         Me.Answer4_PlaceGfx.Enabled = False
-        Me.Answer4_PlaceGfx.Location = New System.Drawing.Point(358, 429)
+        Me.Answer4_PlaceGfx.Location = New System.Drawing.Point(358, 427)
         Me.Answer4_PlaceGfx.Name = "Answer4_PlaceGfx"
-        Me.Answer4_PlaceGfx.Size = New System.Drawing.Size(644, 69)
+        Me.Answer4_PlaceGfx.Size = New System.Drawing.Size(644, 72)
         Me.Answer4_PlaceGfx.TabIndex = 1316
         '
         'AnswerD_Label
@@ -202,12 +202,12 @@ Partial Class FFFScreenFrm
         Me.AnswerD_Label.BackColor = System.Drawing.Color.Transparent
         Me.AnswerD_Label.Enabled = False
         Me.AnswerD_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AnswerD_Label.Font = New System.Drawing.Font("Arial", 25.0!)
+        Me.AnswerD_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.AnswerD_Label.ForeColor = System.Drawing.Color.White
         Me.AnswerD_Label.ImageKey = "(none)"
-        Me.AnswerD_Label.Location = New System.Drawing.Point(65, 13)
+        Me.AnswerD_Label.Location = New System.Drawing.Point(65, 15)
         Me.AnswerD_Label.Name = "AnswerD_Label"
-        Me.AnswerD_Label.Size = New System.Drawing.Size(575, 43)
+        Me.AnswerD_Label.Size = New System.Drawing.Size(553, 43)
         Me.AnswerD_Label.TabIndex = 1222
         Me.AnswerD_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -220,7 +220,7 @@ Partial Class FFFScreenFrm
         Me.MarkD_Label.Font = New System.Drawing.Font("Arial", 24.0!)
         Me.MarkD_Label.ForeColor = System.Drawing.Color.Orange
         Me.MarkD_Label.ImageKey = "(none)"
-        Me.MarkD_Label.Location = New System.Drawing.Point(29, 16)
+        Me.MarkD_Label.Location = New System.Drawing.Point(29, 18)
         Me.MarkD_Label.Name = "MarkD_Label"
         Me.MarkD_Label.Size = New System.Drawing.Size(47, 36)
         Me.MarkD_Label.TabIndex = 1220
@@ -235,9 +235,9 @@ Partial Class FFFScreenFrm
         Me.Answer3_PlaceGfx.Controls.Add(Me.AnswerC_Label)
         Me.Answer3_PlaceGfx.Controls.Add(Me.MarkC_Label)
         Me.Answer3_PlaceGfx.Enabled = False
-        Me.Answer3_PlaceGfx.Location = New System.Drawing.Point(358, 345)
+        Me.Answer3_PlaceGfx.Location = New System.Drawing.Point(358, 343)
         Me.Answer3_PlaceGfx.Name = "Answer3_PlaceGfx"
-        Me.Answer3_PlaceGfx.Size = New System.Drawing.Size(644, 69)
+        Me.Answer3_PlaceGfx.Size = New System.Drawing.Size(644, 72)
         Me.Answer3_PlaceGfx.TabIndex = 1315
         '
         'AnswerC_Label
@@ -245,12 +245,12 @@ Partial Class FFFScreenFrm
         Me.AnswerC_Label.BackColor = System.Drawing.Color.Transparent
         Me.AnswerC_Label.Enabled = False
         Me.AnswerC_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AnswerC_Label.Font = New System.Drawing.Font("Arial", 25.0!)
+        Me.AnswerC_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.AnswerC_Label.ForeColor = System.Drawing.Color.White
         Me.AnswerC_Label.ImageKey = "(none)"
-        Me.AnswerC_Label.Location = New System.Drawing.Point(65, 12)
+        Me.AnswerC_Label.Location = New System.Drawing.Point(65, 14)
         Me.AnswerC_Label.Name = "AnswerC_Label"
-        Me.AnswerC_Label.Size = New System.Drawing.Size(575, 43)
+        Me.AnswerC_Label.Size = New System.Drawing.Size(553, 43)
         Me.AnswerC_Label.TabIndex = 1222
         Me.AnswerC_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -263,7 +263,7 @@ Partial Class FFFScreenFrm
         Me.MarkC_Label.Font = New System.Drawing.Font("Arial", 24.0!)
         Me.MarkC_Label.ForeColor = System.Drawing.Color.Orange
         Me.MarkC_Label.ImageKey = "(none)"
-        Me.MarkC_Label.Location = New System.Drawing.Point(27, 16)
+        Me.MarkC_Label.Location = New System.Drawing.Point(27, 18)
         Me.MarkC_Label.Name = "MarkC_Label"
         Me.MarkC_Label.Size = New System.Drawing.Size(47, 36)
         Me.MarkC_Label.TabIndex = 1220
@@ -278,9 +278,9 @@ Partial Class FFFScreenFrm
         Me.Answer2_PlaceGfx.Controls.Add(Me.AnswerB_Label)
         Me.Answer2_PlaceGfx.Controls.Add(Me.MarkB_Label)
         Me.Answer2_PlaceGfx.Enabled = False
-        Me.Answer2_PlaceGfx.Location = New System.Drawing.Point(358, 261)
+        Me.Answer2_PlaceGfx.Location = New System.Drawing.Point(358, 259)
         Me.Answer2_PlaceGfx.Name = "Answer2_PlaceGfx"
-        Me.Answer2_PlaceGfx.Size = New System.Drawing.Size(644, 69)
+        Me.Answer2_PlaceGfx.Size = New System.Drawing.Size(644, 72)
         Me.Answer2_PlaceGfx.TabIndex = 1314
         '
         'AnswerB_Label
@@ -288,12 +288,12 @@ Partial Class FFFScreenFrm
         Me.AnswerB_Label.BackColor = System.Drawing.Color.Transparent
         Me.AnswerB_Label.Enabled = False
         Me.AnswerB_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AnswerB_Label.Font = New System.Drawing.Font("Arial", 25.0!)
+        Me.AnswerB_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.AnswerB_Label.ForeColor = System.Drawing.Color.White
         Me.AnswerB_Label.ImageKey = "(none)"
-        Me.AnswerB_Label.Location = New System.Drawing.Point(65, 13)
+        Me.AnswerB_Label.Location = New System.Drawing.Point(65, 15)
         Me.AnswerB_Label.Name = "AnswerB_Label"
-        Me.AnswerB_Label.Size = New System.Drawing.Size(575, 43)
+        Me.AnswerB_Label.Size = New System.Drawing.Size(553, 43)
         Me.AnswerB_Label.TabIndex = 1222
         Me.AnswerB_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -306,7 +306,7 @@ Partial Class FFFScreenFrm
         Me.MarkB_Label.Font = New System.Drawing.Font("Arial", 24.0!)
         Me.MarkB_Label.ForeColor = System.Drawing.Color.Orange
         Me.MarkB_Label.ImageKey = "(none)"
-        Me.MarkB_Label.Location = New System.Drawing.Point(29, 16)
+        Me.MarkB_Label.Location = New System.Drawing.Point(29, 18)
         Me.MarkB_Label.Name = "MarkB_Label"
         Me.MarkB_Label.Size = New System.Drawing.Size(45, 36)
         Me.MarkB_Label.TabIndex = 1220

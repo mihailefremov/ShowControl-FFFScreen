@@ -55,24 +55,28 @@ Public Class FFFScreenFrm
     Friend Sub Answer1_PlaceGfx_Click(sender As Object, e As MouseEventArgs) Handles Answer1_PlaceGfx.Click, MarkA_Label.Click, AnswerA_Label.Click
         Answer1_PlaceGfx.BackgroundImage = My.Resources.ResourceManager.GetObject("FinalAC")
         AnswerA_Label.ForeColor = Color.Black
+        MarkA_Label.ForeColor = Color.White
         FFFData.InsertAnswerInOrder(1)
         ParseOrderIntoFields()
     End Sub
     Friend Sub Answer2_PlaceGfx_Click(sender As Object, e As EventArgs) Handles Answer2_PlaceGfx.Click, MarkB_Label.Click, AnswerB_Label.Click
         Answer2_PlaceGfx.BackgroundImage = My.Resources.ResourceManager.GetObject("FinalAC")
         AnswerB_Label.ForeColor = Color.Black
+        MarkB_Label.ForeColor = Color.White
         FFFData.InsertAnswerInOrder(2)
         ParseOrderIntoFields()
     End Sub
     Friend Sub Answer3_PlaceGfx_Click(sender As Object, e As EventArgs) Handles Answer3_PlaceGfx.Click, MarkC_Label.Click, AnswerC_Label.Click
         Answer3_PlaceGfx.BackgroundImage = My.Resources.ResourceManager.GetObject("FinalAC")
         AnswerC_Label.ForeColor = Color.Black
+        MarkC_Label.ForeColor = Color.White
         FFFData.InsertAnswerInOrder(3)
         ParseOrderIntoFields()
     End Sub
     Friend Sub Answer4_PlaceGfx_Click(sender As Object, e As EventArgs) Handles Answer4_PlaceGfx.Click, MarkD_Label.Click, AnswerD_Label.Click
         Answer4_PlaceGfx.BackgroundImage = My.Resources.ResourceManager.GetObject("FinalAC")
         AnswerD_Label.ForeColor = Color.Black
+        MarkD_Label.ForeColor = Color.White
         FFFData.InsertAnswerInOrder(4)
         ParseOrderIntoFields()
     End Sub
@@ -202,19 +206,26 @@ Public Class FFFScreenFrm
         GUIShowHideAnswerField(True)
         GUIEnableDisableAnswerField(False)
         Question_Label.Text = FFFData.Question
-        Question_Label.Font = CreateSuitableQuestionFontSize(1150, FFFData.Question)
+        Question_Label.Font = GUIDesignerPropertisContext.DefaultQuestionFont
+        GUIHelpers.FitTextInsideControl(Question_Label, GUIDesignerPropertisContext.DefaultQuestionFont)
     End Sub
 
     Friend Sub GUIThreeBeepsFire()
         GUIQuestionFire()
         AnswerA_Label.Text = FFFData.Answer1
-        AnswerA_Label.Font = CreateSuitableAnswerFontSize(550, FFFData.Answer1)
         AnswerB_Label.Text = FFFData.Answer2
-        AnswerB_Label.Font = CreateSuitableAnswerFontSize(550, FFFData.Answer2)
         AnswerC_Label.Text = FFFData.Answer3
-        AnswerC_Label.Font = CreateSuitableAnswerFontSize(550, FFFData.Answer3)
         AnswerD_Label.Text = FFFData.Answer4
-        AnswerD_Label.Font = CreateSuitableAnswerFontSize(550, FFFData.Answer4)
+
+        AnswerA_Label.Font = GUIDesignerPropertisContext.DefaultAnswerFont
+        AnswerB_Label.Font = GUIDesignerPropertisContext.DefaultAnswerFont
+        AnswerC_Label.Font = GUIDesignerPropertisContext.DefaultAnswerFont
+        AnswerD_Label.Font = GUIDesignerPropertisContext.DefaultAnswerFont
+
+        GUIHelpers.FitTextInsideControl(AnswerA_Label, GUIDesignerPropertisContext.DefaultAnswerFont)
+        GUIHelpers.FitTextInsideControl(AnswerB_Label, GUIDesignerPropertisContext.DefaultAnswerFont)
+        GUIHelpers.FitTextInsideControl(AnswerC_Label, GUIDesignerPropertisContext.DefaultAnswerFont)
+        GUIHelpers.FitTextInsideControl(AnswerD_Label, GUIDesignerPropertisContext.DefaultAnswerFont)
     End Sub
 
     Private Sub GUIFastestFingerFirstFire()
@@ -277,7 +288,7 @@ Public Class FFFScreenFrm
     End Sub
     Function CreateSuitableQuestionFontSize(textsizelimit As Integer, teksttonarrow As String) As Font
         'teksttonarrow = "tekst----------------------------------------------------------------------------------------------------"
-        Dim myFont As Font = New Font("Arial", 25, FontStyle.Regular, GraphicsUnit.Point)
+        Dim myFont As Font = New Font("Arial", GUIDesignerPropertisContext.QuestionFontSize, FontStyle.Regular, GraphicsUnit.Point)
         Dim textSize = TextRenderer.MeasureText(teksttonarrow, myFont)
         Dim narrowFont As Font
 
@@ -294,13 +305,13 @@ Public Class FFFScreenFrm
             makeFontLower = 13
         End If
 
-        narrowFont = New Font("Arial", 25 - makeFontLower, FontStyle.Regular, GraphicsUnit.Point)
+        narrowFont = New Font("Arial", GUIDesignerPropertisContext.QuestionFontSize - makeFontLower, FontStyle.Regular, GraphicsUnit.Point)
         Return narrowFont
     End Function
 
     Function CreateSuitableAnswerFontSize(textsizelimit As Integer, teksttonarrow As String) As Font
         'teksttonarrow = "Answer::1-------------------------------------"
-        Dim myFont As Font = New Font("Arial", 25, FontStyle.Regular, GraphicsUnit.Point)
+        Dim myFont As Font = New Font("Arial", GUIDesignerPropertisContext.AnswerFontSize, FontStyle.Regular, GraphicsUnit.Point)
         Dim textSize = TextRenderer.MeasureText(teksttonarrow, myFont)
         Dim narrowFont As Font
 
@@ -317,7 +328,7 @@ Public Class FFFScreenFrm
             makeFontLower = 13
         End If
 
-        narrowFont = New Font("Arial", 25 - makeFontLower, FontStyle.Regular, GraphicsUnit.Point)
+        narrowFont = New Font("Arial", GUIDesignerPropertisContext.AnswerFontSize - makeFontLower, FontStyle.Regular, GraphicsUnit.Point)
         Return narrowFont
     End Function
 
@@ -378,6 +389,10 @@ Public Class FFFScreenFrm
         AnswerB_Label.ForeColor = Color.White
         AnswerC_Label.ForeColor = Color.White
         AnswerD_Label.ForeColor = Color.White
+        MarkA_Label.ForeColor = Color.Orange
+        MarkB_Label.ForeColor = Color.Orange
+        MarkC_Label.ForeColor = Color.Orange
+        MarkD_Label.ForeColor = Color.Orange
         EnableDisableOKButton(True)
     End Sub
 
